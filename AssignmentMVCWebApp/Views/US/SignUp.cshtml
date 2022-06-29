@@ -1,0 +1,27 @@
+﻿
+@{
+    ViewBag.Title = "Sign Up";
+}
+<section class="SignUp">
+  @{ Html.BeginForm();}
+<h4>Sign Up</h4>
+<div>
+<label for="exampleFormControlInput1">Full Name</label>
+<input type="text" class="form-control" id="exampleFormControlInput1" placeholder="First And Last Name" required>
+</div>
+<div>
+<label for="exampleFormControlInput1">Mobile No</label>
+<input type="number" min="18" max="100" class="form-control" id="exampleFormControlInput1" placeholder="Mobile Number" required>
+</div>
+<div>
+<label for="exampleFormControlInput1">Email Id</label>
+<input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" required>
+</div>
+<div>
+<label for="exampleFormControlInput1">Password</label>
+<input type="password" class="form-control" id="exampleFormControlInput1" placeholder="At least 6 characters" required>
+</div>
+<input class="btn btn-primary" type="submit" value="Submit">
+<input class="btn btn-primary" type="reset" value="Reset">
+ @{Html.EndForm();}
+ </section>

@@ -1,0 +1,59 @@
+﻿
+@{
+    ViewBag.Title = "Sign Up";
+}
+<h3>Sign Up</h3>
+<div class="container">
+    @{ Html.BeginForm();}
+    <div class="row">
+        <div class="col-lg-3">
+            @Html.Label("Full Name")
+        </div>
+        <div class="col-lg-3">
+            @Html.TextBox("fullname")
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-3">
+            @Html.Label("Email Id")
+        </div>
+        <div class="col-lg-3">
+            @Html.TextBox("emailid")
+        </div>
+    </div>
+        <div class="row">
+        <div class="col-lg-3">
+            @Html.Label("Password")
+        </div>
+        <div class="col-lg-3">
+            @Html.TextBox("password")
+        </div>
+   @* </div>
+        <div class="row">
+        <div class="col-lg-3">
+            @Html.Label("RoleId")
+        </div>
+        <div class="col-lg-3">
+            @Html.TextBox("roleid")
+        </div>
+    </div>*@
+    @*<div class="row">
+        <div class="col-lg-3">
+        </div>
+        <div class="col-lg-3">
+           <input type="submit" value="Sign Up" class="btn btn-success"/>
+        </div>
+    </div>*@
+    <div class="col">
+            <div class="row">
+            <input type="submit" value="Sign Up" class="btn btn-success" />
+        </div>
+        <br/>
+           <div class="row">
+        <p>Already Have an Account?'</p>@Html.ActionLink("SignIn", "SignIn")
+    </div>
+    </div>
+
+    @{Html.EndForm();}
+    </div>
+</div>

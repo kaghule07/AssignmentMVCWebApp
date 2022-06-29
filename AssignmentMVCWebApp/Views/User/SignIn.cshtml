@@ -1,0 +1,41 @@
+﻿
+@{
+    ViewBag.Title = "Sign In";
+}
+<h3>Sign In</h3>
+<div class="container">
+    @{ Html.BeginForm();}
+    <div class="row">
+        <div class="col-lg-3">
+            @Html.Label("Enter Email ID")
+        </div>
+        <div class="col-lg-3">
+            @Html.TextBox("EmailID")
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-3">
+            @Html.Label("Enter Password")
+        </div>
+        <div class="col-lg-3">
+            @Html.TextBox("Password")
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-3">
+        </div>
+        <div class="col-lg-3">
+           <input type="submit" value="Sign In" class="btn btn-success"/>
+        </div>
+    </div>
+       <div>
+        @if(ViewBag.Message !=null)
+            {
+                @ViewBag.Message
+        }
+    </div>
+        <div class="row">
+        <p>Create an New Account'</p>@Html.ActionLink("Sign Up", "Create")
+    </div>
+    @{Html.EndForm();}
+</div>
